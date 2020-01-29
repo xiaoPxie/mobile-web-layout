@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>1px边框问题</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+        }
+
+        /*
+        （1）.通过伪元素选择器创建一个伪元素，边框为1px，并且将尺寸设置为父元素的2倍。
+        （2）.然后在通过transform:scale将元素缩小到百分之50，这样就做到了将边框设置为1设备像素的效果。
+         */
+        .radius-border{
+            position: relative;
+        }
+        @media screen and (-webkit-min-device-pixel-ratio: 2){
+            .radius-border:before{
+                content: "";
+                pointer-events: none; /* 防止点击触发 */
+                box-sizing: border-box;
+                position: absolute;
+                width: 200%;
+                height: 200%;
+                left: 0;
+                top: 0;
+                border-radius: 8px;
+                border:1px solid #999;
+                transform:scale(0.5);
+                transform-origin: 0 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div style="width:100px;height:100px;border:1px solid #999;"></div>
+<br>
+<div class="radius-border"></div>
+</body>
+</html>
