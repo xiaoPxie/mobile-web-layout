@@ -5,15 +5,15 @@ html{
  /*box-sizing: border-box;*/
 }
 
-html,body{
-  /* 在有些手机浏览器中点击一个链接或着可点击元素的时候，会出现一个半透明的灰色背景； */
- -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-   /* 提升移动端滚动的体验效果  */
- -webkit-overflow-scrolling: touch;
- overflow-scrolling: touch;
-  /* 与浏览器窗口高度一致 */
- height: 100%;
-}
+/*html,body{*/
+/*  !* 在有些手机浏览器中点击一个链接或着可点击元素的时候，会出现一个半透明的灰色背景； *!*/
+/* -webkit-tap-highlight-color: rgba(0, 0, 0, 0);*/
+/*   !* 提升移动端滚动的体验效果  *!*/
+/* -webkit-overflow-scrolling: touch;*/
+/* overflow-scrolling: touch;*/
+/*  !* 与浏览器窗口高度一致 *!*/
+/* height: 100%;*/
+/*}*/
 
 body{
   /* 有些背景默认为浅灰色，所以统一设置为纯白 */

@@ -52,18 +52,24 @@
     margin-bottom: px2rem(40);
 
     .nav-list {
-      margin-left: px2rem(40);
+      margin: 0 px2rem(40);
       @include font-size(26.67px);
       //color: #666;
 
       .nav-item{
         float: left;
-        margin-right: px2rem(90);
-        width: px2rem(89);
-        height: px2rem(137);
+        //margin-right: px2rem(90);
+        //width: px2rem(89);
+        width: 25%;
+        height: px2rem(138);
         text-align: center;
 
         a {
+          display: block;
+          position: relative;
+          width: 100%;
+          height: 100%;
+          //width: px2rem(89);
 
           &:hover {
             color: #666;
@@ -73,11 +79,22 @@
           }
         }
 
+        .nav-item-text {
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+        }
+
         .icon {
           display: block;
-          position: relative;
+          position: absolute;
+          left: 50%;
           width: px2rem(89);
           height: px2rem(89);
+          margin-left: px2rem(-44.5);
           margin-bottom: px2rem(23);
           border-radius: 50%;
           line-height: px2rem(89);
