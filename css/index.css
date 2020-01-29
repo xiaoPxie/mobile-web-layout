@@ -80,7 +80,7 @@
     position: relative;
     margin-bottom: 0.5555555556rem; }
     .container_1 nav .nav-list {
-      margin: 0 0.5555555556rem;
+      margin: 0 0.4027777778rem;
       font-size: 13.335px; }
       [data-dpr="2"] .container_1 nav .nav-list {
         font-size: 26.67px; }
@@ -94,7 +94,8 @@
         font-size: 53.34px; }
       .container_1 nav .nav-list .nav-item {
         float: left;
-        width: 25%;
+        margin-right: 6.6666667%;
+        width: 20%;
         height: 1.9166666667rem;
         text-align: center; }
         .container_1 nav .nav-list .nav-item a {
@@ -295,60 +296,61 @@
     [data-dpr="4"] .container_2 header p {
       font-size: 34.66px; }
 .container_2 .recommend {
-  margin-left: 0.3055555556rem; }
-  .container_2 .recommend .wrap-l {
+  margin: 0 0.3055555556rem; }
+  .container_2 .recommend .wrap {
     float: left;
-    width: 4.5416666667rem;
-    height: 4.5416666667rem;
-    margin-right: 0.3194444444rem;
-    background: url("../image/@3x/recommend_exchange@3x.png") no-repeat;
-    background-size: contain; }
-    .container_2 .recommend .wrap-l .text {
-      margin: 1.1388888889rem 0 0 0.4861111111rem;
-      font-size: 18.185px;
-      font-weight: 700; }
-      [data-dpr="2"] .container_2 .recommend .wrap-l .text {
-        font-size: 36.37px; }
-      [data-dpr="2.5"] .container_2 .recommend .wrap-l .text {
-        font-size: 45.4625px; }
-      [data-dpr="2.75"] .container_2 .recommend .wrap-l .text {
-        font-size: 50.00875px; }
-      [data-dpr="3"] .container_2 .recommend .wrap-l .text {
-        font-size: 54.555px; }
-      [data-dpr="4"] .container_2 .recommend .wrap-l .text {
-        font-size: 72.74px; }
-      .container_2 .recommend .wrap-l .text span.text_l {
-        color: #fe9c1d; }
-      .container_2 .recommend .wrap-l .text span.text_r {
-        color: #666; }
-  .container_2 .recommend .wrap-r {
-    float: left;
-    width: 4.5416666667rem; }
-    .container_2 .recommend .wrap-r .content {
+    width: 50%; }
+    .container_2 .recommend .wrap .wrap-l {
+      width: 4.5416666667rem;
+      height: 4.5416666667rem;
+      margin: 0 auto;
+      overflow: hidden;
+      background: url("../image/@3x/recommend_exchange@3x.png") no-repeat;
+      background-size: contain; }
+      .container_2 .recommend .wrap .wrap-l .text {
+        margin: 1.1388888889rem 0 0 0.4861111111rem;
+        font-size: 18.185px;
+        font-weight: 700; }
+        [data-dpr="2"] .container_2 .recommend .wrap .wrap-l .text {
+          font-size: 36.37px; }
+        [data-dpr="2.5"] .container_2 .recommend .wrap .wrap-l .text {
+          font-size: 45.4625px; }
+        [data-dpr="2.75"] .container_2 .recommend .wrap .wrap-l .text {
+          font-size: 50.00875px; }
+        [data-dpr="3"] .container_2 .recommend .wrap .wrap-l .text {
+          font-size: 54.555px; }
+        [data-dpr="4"] .container_2 .recommend .wrap .wrap-l .text {
+          font-size: 72.74px; }
+        .container_2 .recommend .wrap .wrap-l .text span.text_l {
+          color: #fe9c1d; }
+        .container_2 .recommend .wrap .wrap-l .text span.text_r {
+          color: #666; }
+    .container_2 .recommend .wrap .content {
       display: block;
       width: 4.5416666667rem;
       height: 2.1527777778rem;
+      margin: 0 auto;
       overflow: hidden; }
-      .container_2 .recommend .wrap-r .content.content-top {
+      .container_2 .recommend .wrap .content.content-top {
         margin-bottom: 0.2638888889rem;
         background: url("../image/@3x/recommend_location@3x.png") no-repeat;
         background-size: contain; }
-      .container_2 .recommend .wrap-r .content.content-bottom {
+      .container_2 .recommend .wrap .content.content-bottom {
         background: url("../image/@3x/recommend_today_price@3x.png") no-repeat;
         background-size: contain; }
-    .container_2 .recommend .wrap-r .text {
+    .container_2 .recommend .wrap .text {
       margin: 0.6111111111rem 0 0 0.2777777778rem;
       font-size: 12.665px;
       color: #000; }
-      [data-dpr="2"] .container_2 .recommend .wrap-r .text {
+      [data-dpr="2"] .container_2 .recommend .wrap .text {
         font-size: 25.33px; }
-      [data-dpr="2.5"] .container_2 .recommend .wrap-r .text {
+      [data-dpr="2.5"] .container_2 .recommend .wrap .text {
         font-size: 31.6625px; }
-      [data-dpr="2.75"] .container_2 .recommend .wrap-r .text {
+      [data-dpr="2.75"] .container_2 .recommend .wrap .text {
         font-size: 34.82875px; }
-      [data-dpr="3"] .container_2 .recommend .wrap-r .text {
+      [data-dpr="3"] .container_2 .recommend .wrap .text {
         font-size: 37.995px; }
-      [data-dpr="4"] .container_2 .recommend .wrap-r .text {
+      [data-dpr="4"] .container_2 .recommend .wrap .text {
         font-size: 50.66px; }
 
 /*# sourceMappingURL=index.css.map */

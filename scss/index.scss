@@ -52,7 +52,7 @@
     margin-bottom: px2rem(40);
 
     .nav-list {
-      margin: 0 px2rem(40);
+      margin: 0 px2rem(29);
       @include font-size(26.67px);
       //color: #666;
 
@@ -60,7 +60,8 @@
         float: left;
         //margin-right: px2rem(90);
         //width: px2rem(89);
-        width: 25%;
+        margin-right: 6.6666667%;
+        width: 20%;
         height: px2rem(138);
         text-align: center;
 
@@ -275,39 +276,47 @@
   } // end header
 
   .recommend {
-    margin-left: px2rem(22);
+    margin: 0 px2rem(22);
 
-    .wrap-l {
+    .wrap {
       float: left;
-      width: px2rem(327);
-      height: px2rem(327);
-      margin-right: px2rem(23);
-      background: url("../image/@3x/recommend_exchange@3x.png") no-repeat;
-      background-size: contain;
+      width: 50%;
 
-      .text {
-        margin: px2rem(82) 0 0 px2rem(35);
-        @include font-size(36.37px);
-        font-weight: 700;
+      .wrap-l {
+        width: px2rem(327);
+        height: px2rem(327);
+        //margin-right: px2rem(23);
+        margin: 0 auto;
+        overflow: hidden;
+        background: url("../image/@3x/recommend_exchange@3x.png") no-repeat;
+        background-size: contain;
 
-        span {
-          &.text_l {
-            color: #fe9c1d;
-          }
-          &.text_r {
-            color: #666;
+        .text {
+          margin: px2rem(82) 0 0 px2rem(35);
+          @include font-size(36.37px);
+          font-weight: 700;
+
+          span {
+            &.text_l {
+              color: #fe9c1d;
+            }
+            &.text_r {
+              color: #666;
+            }
           }
         }
       }
+      .wrap-r {
     }
-    .wrap-r {
-      float: left;
-      width: px2rem(327);
+
+      //float: left;
+      //width: 100%;
 
       .content {
         display: block;
         width: px2rem(327);
         height: px2rem(155);
+        margin: 0 auto;
         overflow: hidden;
 
         &.content-top {
