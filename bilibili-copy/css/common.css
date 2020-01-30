@@ -1,0 +1,253 @@
+@charset "UTF-8";
+/* 移动端页面设计稿宽度 */
+/* 移动端页面设计稿dpr基准值 */
+/* 将移动端页面分为10块 */
+/* 缩放所支持的设备最小宽度 */
+/* 缩放所支持的设备最大宽度 */
+/*
+    rem与px对应关系，1rem代表在JS中设置的html font-size值（为一块的宽度），$rem即为$px对应占多少块
+
+        $px                    $rem
+    -------------    ===    ------------
+    $design-width              $blocks
+*/
+/* 单位px转化为rem */
+/* 单位rem转化为px，可用于根据rem单位快速计算原px */
+/* html根的宽度定义 */
+/* 设置容器拉伸的最小宽度 */
+/* 设置容器拉伸的最大宽度 */
+/* 设置字体大小，不使用rem单位， 根据dpr值分段调整 */
+/**
+  display:flex兼容性存在多方的问题，针对该问题，编写以下的@mixin，可能不够完整
+ */
+html {
+  background-color: #fff;
+  font-family: "Microsoft YaHei", serif; }
+
+.header-fix-panel {
+  position: fixed;
+  top: 0;
+  background: #fff;
+  z-index: 100; }
+
+.common-header {
+  display: -webkit-box;
+  /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+  display: -moz-box;
+  /* Firefox 17- */
+  display: -webkit-flex;
+  /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+  display: -moz-flex;
+  /* Firefox 18+ */
+  display: -ms-flexbox;
+  /* IE 10 */
+  display: flex;
+  /* Chrome 29+, Firefox 22+, IE 11+, Opera 12.1/17/18, Android 4.4+ */
+  /* 使用flex布局兼容性@mixin */
+  width: auto;
+  height: 0.8276388889rem;
+  padding: 0.1733333333rem 0;
+  justify-content: space-between;
+  align-items: center; }
+  .common-header .wrap-l {
+    display: -webkit-box;
+    /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+    display: -moz-box;
+    /* Firefox 17- */
+    display: -webkit-flex;
+    /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+    display: -moz-flex;
+    /* Firefox 18+ */
+    display: -ms-flexbox;
+    /* IE 10 */
+    display: flex;
+    /* Chrome 29+, Firefox 22+, IE 11+, Opera 12.1/17/18, Android 4.4+ */
+    /* 使用flex布局兼容性@mixin */
+    width: 1.8055555556rem;
+    margin-left: 0.48rem; }
+    .common-header .wrap-l .header-logo {
+      display: block;
+      width: 1.6413888889rem;
+      height: 0.7280555556rem;
+      background: url("../image/logo.png") no-repeat;
+      background-size: contain; }
+  .common-header .wrap-r {
+    display: -webkit-box;
+    /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+    display: -moz-box;
+    /* Firefox 17- */
+    display: -webkit-flex;
+    /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+    display: -moz-flex;
+    /* Firefox 18+ */
+    display: -ms-flexbox;
+    /* IE 10 */
+    display: flex;
+    /* Chrome 29+, Firefox 22+, IE 11+, Opera 12.1/17/18, Android 4.4+ */
+    /* 使用flex布局兼容性@mixin */
+    width: 100%;
+    align-items: center;
+    margin-right: 0.48rem; }
+    .common-header .wrap-r .search-input {
+      display: -webkit-box;
+      /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+      display: -moz-box;
+      /* Firefox 17- */
+      display: -webkit-flex;
+      /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+      display: -moz-flex;
+      /* Firefox 18+ */
+      display: -ms-flexbox;
+      /* IE 10 */
+      display: flex;
+      /* Chrome 29+, Firefox 22+, IE 11+, Opera 12.1/17/18, Android 4.4+ */
+      /* 使用flex布局兼容性@mixin */
+      align-items: center;
+      margin: 0 0.4444444444rem;
+      padding: 0 0.2933333333rem;
+      line-height: 0.6388888889rem;
+      font-size: 0.3333333333rem;
+      border-radius: 0.4166666667rem;
+      background: #f4f4f4; }
+      .common-header .wrap-r .search-input .search-icon {
+        width: 0.3328888889rem;
+        height: 0.3328888889rem;
+        margin-right: 0.1066666667rem;
+        background: url("../svg/search.svg") no-repeat;
+        background-size: contain; }
+      .common-header .wrap-r .search-input .search-text {
+        width: 2.4666666667rem;
+        height: 0.6397222222rem; }
+      .common-header .wrap-r .search-input:hover {
+        color: #999; }
+      .common-header .wrap-r .search-input:link {
+        color: #999; }
+    .common-header .wrap-r .my-btn {
+      width: 0.6397222222rem;
+      height: 0.6397222222rem;
+      margin-right: 0.32rem;
+      background: url("../svg/user.svg") no-repeat;
+      background-size: contain; }
+    .common-header .wrap-r .download-btn {
+      width: 2.1591666667rem;
+      height: 0.6658333333rem;
+      border-radius: 0.0694444444rem;
+      text-align: center;
+      line-height: 0.6658333333rem;
+      font-size: 0.3466694444rem;
+      background-color: #fb7299; }
+      .common-header .wrap-r .download-btn:hover {
+        color: #fff; }
+      .common-header .wrap-r .download-btn:link {
+        color: #fff; }
+
+.common-nav {
+  position: relative;
+  width: auto;
+  background: #fff;
+  overflow: hidden;
+  z-index: 100; }
+  .common-nav .nav-list {
+    width: 90%;
+    height: 1.1731666667rem;
+    line-height: 1.1731666667rem;
+    padding: 0 0.64rem; }
+  .common-nav .nav-item {
+    display: inline-block;
+    height: 0.8307222222rem;
+    margin-right: 0.8333333333rem;
+    vertical-align: middle;
+    line-height: 0.8307222222rem;
+    color: #757575;
+    font-size: 0.3733305556rem; }
+    .common-nav .nav-item.active {
+      color: #fb7299;
+      border-bottom: 0.0529444444rem solid #fb7299; }
+    .common-nav .nav-item:last-child {
+      margin-right: 0; }
+  .common-nav .nav-more-btn {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0.4166666667rem;
+    width: 0.7465277778rem;
+    height: 0.7465277778rem;
+    margin-top: -0.3732638889rem;
+    background: url("../svg/sorting.svg") no-repeat;
+    background-size: contain; }
+
+.common-footer {
+  height: 0.9444444444rem;
+  line-height: 0.9444444444rem;
+  margin-top: 0.84rem;
+  text-align: center;
+  font-size: 0.3472222222rem;
+  color: #999; }
+
+.fix-panel {
+  display: -webkit-box;
+  /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+  display: -moz-box;
+  /* Firefox 17- */
+  display: -webkit-flex;
+  /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+  display: -moz-flex;
+  /* Firefox 18+ */
+  display: -ms-flexbox;
+  /* IE 10 */
+  display: flex;
+  /* Chrome 29+, Firefox 22+, IE 11+, Opera 12.1/17/18, Android 4.4+ */
+  /* 使用flex布局兼容性@mixin */
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 1.6666666667rem;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 100; }
+  .fix-panel .fix-close-btn {
+    width: 0.2777777778rem;
+    height: 0.2777777778rem;
+    margin: 0 0.2777777778rem;
+    background: url("../image/ic_close_bottom.png") no-repeat;
+    background-size: contain; }
+  .fix-panel .content {
+    display: -webkit-box;
+    /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+    display: -moz-box;
+    /* Firefox 17- */
+    display: -webkit-flex;
+    /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+    display: -moz-flex;
+    /* Firefox 18+ */
+    display: -ms-flexbox;
+    /* IE 10 */
+    display: flex;
+    /* Chrome 29+, Firefox 22+, IE 11+, Opera 12.1/17/18, Android 4.4+ */
+    /* 使用flex布局兼容性@mixin */ }
+    .fix-panel .content .content-l {
+      width: 0.8888888889rem;
+      height: 0.8888888889rem;
+      margin-right: 0.2083333333rem;
+      background: url("../image/logo_bottom.png") no-repeat;
+      background-size: contain; }
+    .fix-panel .content .content-r .top {
+      font-size: 0.3611111111rem;
+      color: #fff; }
+    .fix-panel .content .content-r .bottom {
+      font-size: 0.2777777778rem;
+      color: #999; }
+  .fix-panel .fix-download-btn {
+    display: block;
+    width: 2rem;
+    height: 0.8333333333rem;
+    margin-left: auto;
+    margin-right: 0.2777777778rem;
+    line-height: 0.8333333333rem;
+    text-align: center;
+    font-size: 0.2777777778rem;
+    color: #fff;
+    border-radius: 0.1388888889rem;
+    background: #fb7299; }
+
+/*# sourceMappingURL=common.css.map */

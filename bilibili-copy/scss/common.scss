@@ -1,0 +1,228 @@
+@charset "UTF-8";
+
+@import "../../scss/util";
+@import "./flex-util";
+
+html{
+  background-color: #fff;
+  font-family: "Microsoft YaHei", serif;
+  //
+  //@include root-width();
+}
+
+.header-fix-panel {
+  position: fixed;
+  top: 0;
+  background: #fff;
+  z-index: 100;
+}
+.common-header {
+  @include display-flex();  /* 使用flex布局兼容性@mixin */
+  width: auto;
+  height: px2rem(59.59);
+  padding: px2rem(12.48) 0;
+  justify-content: space-between;
+  align-items: center;
+
+  .wrap-l {
+    @include display-flex();  /* 使用flex布局兼容性@mixin */
+    width: px2rem(130);
+    margin-left: px2rem(34.56);
+
+    .header-logo {
+      display: block;
+      width: px2rem(118.18);
+      height: px2rem(52.42);
+      background: url("../image/logo.png") no-repeat;
+      background-size: contain;
+    }
+  }
+  .wrap-r {
+    @include display-flex();  /* 使用flex布局兼容性@mixin */
+    width: 100%;
+    align-items: center;
+    margin-right: px2rem(34.56);
+
+    .search-input {
+      @include display-flex();  /* 使用flex布局兼容性@mixin */
+      align-items: center;
+      margin: 0 px2rem(32);
+      padding: 0 px2rem(21.12);
+      line-height: px2rem(46);
+      font-size: px2rem(24);
+      border-radius: px2rem(30);
+      background: #f4f4f4;
+
+      .search-icon {
+        width: px2rem(23.968);
+        height: px2rem(23.968);
+        margin-right: px2rem(7.68);
+        background: url("../svg/search.svg") no-repeat;
+        background-size: contain;
+      }
+      .search-text {
+        width: px2rem(177.6);
+        height: px2rem(46.06);
+      }
+      &:hover {
+        color: #999;
+      }
+      &:link {
+        color: #999;
+      }
+    }
+
+    .my-btn {
+      width: px2rem(46.06);
+      height: px2rem(46.06);
+      margin-right: px2rem(23.04);
+      background: url("../svg/user.svg") no-repeat;
+      background-size: contain;
+    }
+
+    .download-btn {
+      width: px2rem(155.46);
+      height: px2rem(47.94);
+      border-radius: px2rem(5);
+      text-align: center;
+      line-height: px2rem(47.94);
+      font-size: px2rem(24.9602);
+      background-color: #fb7299;
+
+      &:hover {
+        color: #fff;
+      }
+      &:link {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.common-nav {
+  position: relative;
+  width: auto;
+  background: #fff;
+  overflow: hidden;
+  z-index: 100;
+
+  .nav-list {
+    width: 90%;
+    height: px2rem(84.468);
+    line-height: px2rem(84.468);
+    padding: 0 px2rem(46.08);
+
+    //.nav-item {
+    //  display: inline-block;
+    //  height: px2rem(59.812);
+    //  margin-right: px2rem(60);
+    //  vertical-align: middle;
+    //  line-height: px2rem(59.812);
+    //  color: #757575;
+    //  font-size: px2rem(26.8798);
+    //
+    //  &.active {
+    //    color: #fb7299;
+    //    border-bottom: px2rem(3.812) solid #fb7299;
+    //  }
+    //  &:last-child {
+    //    margin-right: 0;
+    //  }
+    //}
+
+  }
+  .nav-item {
+    display: inline-block;
+    height: px2rem(59.812);
+    margin-right: px2rem(60);
+    vertical-align: middle;
+    line-height: px2rem(59.812);
+    color: #757575;
+    font-size: px2rem(26.8798);
+
+    &.active {
+      color: #fb7299;
+      border-bottom: px2rem(3.812) solid #fb7299;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .nav-more-btn {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: px2rem(30);
+    width: px2rem(53.75);
+    height: px2rem(53.75);
+    margin-top: px2rem(-26.875);
+    background: url("../svg/sorting.svg") no-repeat;
+    background-size: contain;
+  }
+}
+
+.common-footer {
+  height: px2rem(68);
+  line-height: px2rem(68);
+  margin-top: px2rem(60.48);
+  text-align: center;
+  font-size: px2rem(25);
+  color: #999;
+}
+
+.fix-panel {
+  @include display-flex();  /* 使用flex布局兼容性@mixin */
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: px2rem(120);
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+
+  .fix-close-btn {
+    width: px2rem(20);
+    height: px2rem(20);
+    margin: 0 px2rem(20);
+    background: url("../image/ic_close_bottom.png") no-repeat;
+    background-size: contain;
+  }
+  .content {
+    @include display-flex();  /* 使用flex布局兼容性@mixin */
+
+    .content-l {
+      width: px2rem(64);
+      height: px2rem(64);
+      margin-right: px2rem(15);
+      background: url("../image/logo_bottom.png") no-repeat;
+      background-size: contain;
+    }
+    .content-r {
+
+      .top {
+        font-size: px2rem(26);
+        color: #fff;
+      }
+      .bottom {
+        font-size: px2rem(20);
+        color: #999;
+      }
+    }
+  }
+
+  .fix-download-btn {
+    display: block;
+    width: px2rem(144);
+    height: px2rem(60);
+    margin-left: auto;
+    margin-right: px2rem(20);
+    line-height: px2rem(60);
+    text-align: center;
+    font-size: px2rem(20);
+    color: #fff;
+    border-radius: px2rem(10);
+    background: #fb7299;
+  }
+}
+
+

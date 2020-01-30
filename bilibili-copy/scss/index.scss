@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+@import "../../scss/util";
+@import "./flex-util";
+
+.banner {
+  position: relative;
+  margin-top: px2rem(169.018);
+  margin-bottom: px2rem(20);
+  padding: 0 px2rem(23.04);
+
+  .swiper-container {
+    //width: px2rem(673.938);
+    width: 100%;
+    height: px2rem(211.188);
+    border-radius: px2rem(20);
+
+    .swiper-pagination {
+      @include display-flex();  /* 使用flex布局兼容性@mixin */
+      position: absolute;
+      align-items: center;
+      left: 50%;
+      bottom: 0;
+      width: auto;
+      padding: 0 px2rem(20);
+      border-radius: px2rem(20);
+      background: rgba(0,0,0,0.5);
+      transform: translateX(-50%);
+
+      &.swiper-pagination-bullets {
+        height: px2rem(20);
+        bottom: px2rem(5);
+      }
+    }
+    .swiper-pagination-bullet {
+      width: px2rem(10);
+      height: px2rem(10);
+      opacity: 1;
+      background: #fff;
+    }
+    .swiper-pagination-bullet-active {
+      background: #dd698c;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+}
+
+.content-list {
+  @include display-flex();  /* 使用flex布局兼容性@mixin */
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 px2rem(23.04);
+
+  .cotent-panel {
+    width: 48%;
+    margin-bottom: px2rem(25);
+    border-radius: px2rem(15);
+    overflow: hidden;
+
+    .cotent-item {
+      display: block;
+      width: px2rem(325.582);
+
+      .content-t {
+        @include display-flex();  /* 使用flex布局兼容性@mixin */
+        position: relative;
+        justify-content: center;
+        width: 100%;
+        height: px2rem(203.376);
+        margin-bottom: px2rem(5);
+        border-radius: px2rem(120);
+        //background: url("../image/noface.gif") no-repeat;
+        //background-size: contain;
+
+        .content-img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .content-detail {
+        @include display-flex();  /* 使用flex布局兼容性@mixin */
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        justify-content: space-around;
+        font-size: px2rem(24);
+        color: #fff;
+        background: rgba(0, 0, 0, 0.5);
+
+        .views {
+          width: px2rem(30.72);
+          height: px2rem(30.72);
+          background: url("../svg/video.svg") no-repeat;
+          background-size: cover;
+        }
+        .comments {
+          width: px2rem(30.72);
+          height: px2rem(30.72);
+          background: url("../svg/stats.svg") no-repeat;
+          background-size: cover;
+        }
+        .text{
+          @include flex(1);
+        }
+      }
+
+      .content-b {
+
+        .content-title {
+          font-size: px2rem(25);
+          color: #212121;
+        }
+      }
+    }
+  }
+}

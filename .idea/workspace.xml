@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="625f8b18-5dc0-4a32-9660-81d32061b7d9" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/bilibili-copy/bilibili-copy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bilibili-copy/js/rem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bilibili-copy/scss/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="SCSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -36,15 +35,20 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/scss" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/bilibili-copy/scss" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="settings.editor.selected.configurable" value="web.server" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\app\bilibili-copy\scss" />
+      <recent name="C:\Users\Administrator\Desktop\app\bilibili-copy\js" />
       <recent name="C:\Users\Administrator\Desktop\app\scss" />
       <recent name="C:\Users\Administrator\Desktop\app\js" />
       <recent name="C:\Users\Administrator\Desktop\app" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\app\bilibili-copy" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -77,7 +81,8 @@
       <workItem from="1580097883371" duration="17979000" />
       <workItem from="1580182694013" duration="1304000" />
       <workItem from="1580184120930" duration="13141000" />
-      <workItem from="1580273578953" duration="14055000" />
+      <workItem from="1580273578953" duration="22462000" />
+      <workItem from="1580357149104" duration="30239000" />
     </task>
     <servers />
   </component>
@@ -93,14 +98,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1580281315080" />
+    <state x="506" y="165" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580304212546">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="506" y="165" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1580304212546" />
     <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1580276902825">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1580276902825" />
-    <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1579877418363">
+    <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580390663381">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1579877418363" />
+    <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1580390663381" />
     <state x="289" y="139" key="EditFileWatcherDialog" timestamp="1580200754605">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -113,5 +122,13 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1580273689037" />
+    <state x="339" y="157" key="run.anything.popup" timestamp="1580364381167">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="157" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1580364381167" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1580304708065">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1580304708065" />
   </component>
 </project>
