@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+@import "../../scss/util";
+@import "./flex-util";
+
+/* 字体库 */
+@font-face {
+  font-family: 'Helvetica';
+  src:url('../font/Helvetica/Helvetica.eot');
+  src: url('../font/Helvetica/Helvetica.eot?#iefix') format('embedded-opentype'),
+        url('../font/Helvetica/Helvetica.woff') format('woff'),
+        url('../font/Helvetica/Helvetica.ttf')  format('truetype'),
+        url('../font/Helvetica/Helvetica.svg#Helvetica') format('svg');
+  //font-weight: bold;
+  font-style: normal;
+}
+
+html{
+  background-color: #fff;
+  font-family: Helvetica, "Microsoft YaHei", serif;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+
+  @include root-width();
+}
+
+
+.common-header {
+  @include fixed-size(height, 90px);
+  @include fixed-size(font-size, 38px);
+  text-align: center;
+  @include fixed-size(line-height, 90px);
+  color: #fff;
+  background-color: #00b38a;
+}
+
+.app-download-wrap {
+  @include display-flex;
+  @include align-items_center;
+  position: fixed;
+  width: 100%;
+  padding: px2rem(23) 0;
+  @include fixed-size(bottom, 92px);
+  text-align: center;
+  font-size: 0;
+  border: none;
+  background-color: rgba(14, 14, 14, 0.9);
+
+  .app-download-panel {
+    position: relative;
+    width: 100%;
+
+    .mascot {
+      position: absolute;
+      left: px2rem(23);
+      top: px2rem(-62.85);
+      width: px2rem(100);
+      height: px2rem(80);
+      font-size: 0;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .close-btn {
+      box-sizing: border-box;
+      position: absolute;
+      right: px2rem(23);
+      top: px2rem(-58);
+      width: px2rem(72);
+      height: px2rem(72);
+      padding: px2rem(14);
+      border-radius: px2rem(50);
+      //background-color: rgba(14, 14, 14, 0.9);;
+      background:linear-gradient(to bottom, rgba(14, 14, 14, 0.9) 50%, transparent 50%, transparent 100%);
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    a {
+      width: 100%;
+
+      .img-l, .img-m, .img-r{
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .img-l {
+        width: 12%;
+        margin-right: 2%;
+      }
+      .img-m {
+        width: 50%;
+        margin-right: 5%;
+      }
+      .img-r {
+        width: 25%;
+      }
+    }
+  }
+
+}
+
+.common-footer {
+  @include display-flex;
+  @include align-items_center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  @include fixed-size(height, 92px);
+  @include fixed-size(line-height, 92px);
+  background-color: #f6f6f6;
+
+  .footer-item{
+    @include flex_auto;
+    height: 100%;
+    text-align: center;
+    font-size: 0;
+    //@include fixed-size(font-size, 34px);
+    &:link {
+      color: #c2cfcc;
+    }
+    &:hover {
+      color: #c2cfcc;
+    }
+
+    span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .icon {
+      @include fixed-size(width, 36px);
+      @include fixed-size(height, 36px);
+
+      &.icon-page {
+        background: url("../image/icon2.png") no-repeat;
+        background-position: -65px -2px;
+        &.active {
+          background-position: -65px -38px;
+        }
+      }
+      &.icon-search {
+        background: url("../image/icon2.png") no-repeat;
+        background-position: -26px -2px;
+        &.active {
+          background-position: -26px -38px;
+        }
+      }
+      &.icon-my {
+        background: url("../image/icon2.png") no-repeat;
+        background-position: -109px -5px;
+        &.active {
+          background-position: -109px -38px;
+        }
+      }
+    }
+    .text {
+      @include fixed-size(font-size, 34px);
+    }
+
+    &.active {
+      color: #00b38a;
+      background-color: #e7f3f0;
+    }
+  }
+}
+
+
+
+

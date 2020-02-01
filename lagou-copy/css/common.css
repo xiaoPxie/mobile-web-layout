@@ -1,0 +1,301 @@
+@charset "UTF-8";
+/* 移动端页面设计稿宽度 */
+/* 移动端页面设计稿dpr基准值 */
+/* 将移动端页面分为10块 */
+/* 缩放所支持的设备最小宽度 */
+/* 缩放所支持的设备最大宽度 */
+/*
+    rem与px对应关系，1rem代表在JS中设置的html font-size值（为一块的宽度），$rem即为$px对应占多少块
+
+        $px                    $rem
+    -------------    ===    ------------
+    $design-width              $blocks
+*/
+/* 单位px转化为rem */
+/* 单位rem转化为px，可用于根据rem单位快速计算原px */
+/* html根的宽度定义 */
+/* 设置容器拉伸的最小宽度 */
+/* 设置容器拉伸的最大宽度 */
+/* 固定值大小，不使用rem单位， 根据dpr值分段调整 */
+/**
+  display:flex兼容性存在多方的问题，针对该问题，编写以下的@mixin，可能不够完整
+ */
+/* 字体库 */
+@font-face {
+  font-family: 'Helvetica';
+  src: url("../font/Helvetica/Helvetica.eot");
+  src: url("../font/Helvetica/Helvetica.eot?#iefix") format("embedded-opentype"), url("../font/Helvetica/Helvetica.woff") format("woff"), url("../font/Helvetica/Helvetica.ttf") format("truetype"), url("../font/Helvetica/Helvetica.svg#Helvetica") format("svg");
+  font-style: normal; }
+html {
+  background-color: #fff;
+  font-family: Helvetica, "Microsoft YaHei", serif;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+  /* 某些机型虽然设备dpr大于1，但识别不了scale缩放，这里需要重新设置最小宽度防止出现横向滚动条 */ }
+  html body {
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 320px;
+    /* 在body中添加data-content-max属性，以限定最大的宽度 ，两边留空白的布局*/ }
+    @media (-webkit-device-pixel-ratio: 2) {
+      html body {
+        min-width: 640px; } }
+    @media (-webkit-device-pixel-ratio: 2.5) {
+      html body {
+        min-width: 800px; } }
+    @media (-webkit-device-pixel-ratio: 2.75) {
+      html body {
+        min-width: 880px; } }
+    @media (-webkit-device-pixel-ratio: 3) {
+      html body {
+        min-width: 960px; } }
+    @media (-webkit-device-pixel-ratio: 4) {
+      html body {
+        min-width: 1280px; } }
+    html body[data-content-max] {
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 540px; }
+      @media (-webkit-device-pixel-ratio: 2) {
+        html body[data-content-max] {
+          max-width: 1080px; } }
+      @media (-webkit-device-pixel-ratio: 2.5) {
+        html body[data-content-max] {
+          max-width: 1350px; } }
+      @media (-webkit-device-pixel-ratio: 2.75) {
+        html body[data-content-max] {
+          max-width: 1485px; } }
+      @media (-webkit-device-pixel-ratio: 3) {
+        html body[data-content-max] {
+          max-width: 1620px; } }
+      @media (-webkit-device-pixel-ratio: 4) {
+        html body[data-content-max] {
+          max-width: 2160px; } }
+  html[data-dpr="1"] body {
+    min-width: 320px; }
+
+.common-header {
+  height: 45px;
+  font-size: 19px;
+  text-align: center;
+  line-height: 45px;
+  color: #fff;
+  background-color: #00b38a; }
+  [data-dpr="2"] .common-header {
+    height: 90px; }
+  [data-dpr="2.5"] .common-header {
+    height: 112.5px; }
+  [data-dpr="2.75"] .common-header {
+    height: 123.75px; }
+  [data-dpr="3"] .common-header {
+    height: 135px; }
+  [data-dpr="4"] .common-header {
+    height: 180px; }
+  [data-dpr="2"] .common-header {
+    font-size: 38px; }
+  [data-dpr="2.5"] .common-header {
+    font-size: 47.5px; }
+  [data-dpr="2.75"] .common-header {
+    font-size: 52.25px; }
+  [data-dpr="3"] .common-header {
+    font-size: 57px; }
+  [data-dpr="4"] .common-header {
+    font-size: 76px; }
+  [data-dpr="2"] .common-header {
+    line-height: 90px; }
+  [data-dpr="2.5"] .common-header {
+    line-height: 112.5px; }
+  [data-dpr="2.75"] .common-header {
+    line-height: 123.75px; }
+  [data-dpr="3"] .common-header {
+    line-height: 135px; }
+  [data-dpr="4"] .common-header {
+    line-height: 180px; }
+
+.app-download-wrap {
+  display: -webkit-box;
+  /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+  display: -moz-box;
+  /* Firefox 17- */
+  display: -webkit-flex;
+  /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+  display: -moz-flex;
+  /* Firefox 18+ */
+  display: -ms-flexbox;
+  /* IE 10 */
+  display: flex;
+  /* Chrome 29+, Firefox 22+, IE 11+, Opera 12.1/17/18, Android 4.4+ */
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  padding: 0.3194444444rem 0;
+  bottom: 46px;
+  text-align: center;
+  font-size: 0;
+  border: none;
+  background-color: rgba(14, 14, 14, 0.9); }
+  [data-dpr="2"] .app-download-wrap {
+    bottom: 92px; }
+  [data-dpr="2.5"] .app-download-wrap {
+    bottom: 115px; }
+  [data-dpr="2.75"] .app-download-wrap {
+    bottom: 126.5px; }
+  [data-dpr="3"] .app-download-wrap {
+    bottom: 138px; }
+  [data-dpr="4"] .app-download-wrap {
+    bottom: 184px; }
+  .app-download-wrap .app-download-panel {
+    position: relative;
+    width: 100%; }
+    .app-download-wrap .app-download-panel .mascot {
+      position: absolute;
+      left: 0.3194444444rem;
+      top: -0.8729166667rem;
+      width: 1.3888888889rem;
+      height: 1.1111111111rem;
+      font-size: 0; }
+      .app-download-wrap .app-download-panel .mascot img {
+        width: 100%;
+        height: auto; }
+    .app-download-wrap .app-download-panel .close-btn {
+      box-sizing: border-box;
+      position: absolute;
+      right: 0.3194444444rem;
+      top: -0.8055555556rem;
+      width: 1rem;
+      height: 1rem;
+      padding: 0.1944444444rem;
+      border-radius: 0.6944444444rem;
+      background: linear-gradient(to bottom, rgba(14, 14, 14, 0.9) 50%, transparent 50%, transparent 100%); }
+      .app-download-wrap .app-download-panel .close-btn img {
+        width: 100%;
+        height: auto; }
+    .app-download-wrap .app-download-panel a {
+      width: 100%; }
+      .app-download-wrap .app-download-panel a .img-l, .app-download-wrap .app-download-panel a .img-m, .app-download-wrap .app-download-panel a .img-r {
+        display: inline-block;
+        vertical-align: middle; }
+      .app-download-wrap .app-download-panel a .img-l {
+        width: 12%;
+        margin-right: 2%; }
+      .app-download-wrap .app-download-panel a .img-m {
+        width: 50%;
+        margin-right: 5%; }
+      .app-download-wrap .app-download-panel a .img-r {
+        width: 25%; }
+
+.common-footer {
+  display: -webkit-box;
+  /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+  display: -moz-box;
+  /* Firefox 17- */
+  display: -webkit-flex;
+  /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+  display: -moz-flex;
+  /* Firefox 18+ */
+  display: -ms-flexbox;
+  /* IE 10 */
+  display: flex;
+  /* Chrome 29+, Firefox 22+, IE 11+, Opera 12.1/17/18, Android 4.4+ */
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 46px;
+  line-height: 46px;
+  background-color: #f6f6f6; }
+  [data-dpr="2"] .common-footer {
+    height: 92px; }
+  [data-dpr="2.5"] .common-footer {
+    height: 115px; }
+  [data-dpr="2.75"] .common-footer {
+    height: 126.5px; }
+  [data-dpr="3"] .common-footer {
+    height: 138px; }
+  [data-dpr="4"] .common-footer {
+    height: 184px; }
+  [data-dpr="2"] .common-footer {
+    line-height: 92px; }
+  [data-dpr="2.5"] .common-footer {
+    line-height: 115px; }
+  [data-dpr="2.75"] .common-footer {
+    line-height: 126.5px; }
+  [data-dpr="3"] .common-footer {
+    line-height: 138px; }
+  [data-dpr="4"] .common-footer {
+    line-height: 184px; }
+  .common-footer .footer-item {
+    -webkit-box-flex: 1;
+    -ms-flex: auto;
+    -webkit-flex: auto;
+    flex: auto;
+    height: 100%;
+    text-align: center;
+    font-size: 0; }
+    .common-footer .footer-item:link {
+      color: #c2cfcc; }
+    .common-footer .footer-item:hover {
+      color: #c2cfcc; }
+    .common-footer .footer-item span {
+      display: inline-block;
+      vertical-align: middle; }
+    .common-footer .footer-item .icon {
+      width: 18px;
+      height: 18px; }
+      [data-dpr="2"] .common-footer .footer-item .icon {
+        width: 36px; }
+      [data-dpr="2.5"] .common-footer .footer-item .icon {
+        width: 45px; }
+      [data-dpr="2.75"] .common-footer .footer-item .icon {
+        width: 49.5px; }
+      [data-dpr="3"] .common-footer .footer-item .icon {
+        width: 54px; }
+      [data-dpr="4"] .common-footer .footer-item .icon {
+        width: 72px; }
+      [data-dpr="2"] .common-footer .footer-item .icon {
+        height: 36px; }
+      [data-dpr="2.5"] .common-footer .footer-item .icon {
+        height: 45px; }
+      [data-dpr="2.75"] .common-footer .footer-item .icon {
+        height: 49.5px; }
+      [data-dpr="3"] .common-footer .footer-item .icon {
+        height: 54px; }
+      [data-dpr="4"] .common-footer .footer-item .icon {
+        height: 72px; }
+      .common-footer .footer-item .icon.icon-page {
+        background: url("../image/icon2.png") no-repeat;
+        background-position: -65px -2px; }
+        .common-footer .footer-item .icon.icon-page.active {
+          background-position: -65px -38px; }
+      .common-footer .footer-item .icon.icon-search {
+        background: url("../image/icon2.png") no-repeat;
+        background-position: -26px -2px; }
+        .common-footer .footer-item .icon.icon-search.active {
+          background-position: -26px -38px; }
+      .common-footer .footer-item .icon.icon-my {
+        background: url("../image/icon2.png") no-repeat;
+        background-position: -109px -5px; }
+        .common-footer .footer-item .icon.icon-my.active {
+          background-position: -109px -38px; }
+    .common-footer .footer-item .text {
+      font-size: 17px; }
+      [data-dpr="2"] .common-footer .footer-item .text {
+        font-size: 34px; }
+      [data-dpr="2.5"] .common-footer .footer-item .text {
+        font-size: 42.5px; }
+      [data-dpr="2.75"] .common-footer .footer-item .text {
+        font-size: 46.75px; }
+      [data-dpr="3"] .common-footer .footer-item .text {
+        font-size: 51px; }
+      [data-dpr="4"] .common-footer .footer-item .text {
+        font-size: 68px; }
+    .common-footer .footer-item.active {
+      color: #00b38a;
+      background-color: #e7f3f0; }
+
+/*# sourceMappingURL=common.css.map */

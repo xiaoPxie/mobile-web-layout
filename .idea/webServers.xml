@@ -2,7 +2,7 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="9b71b988-2d60-451f-b495-f71f8db96e41" name="web-app" url="http://192.168.0.106:8080/app">
+      <webServer id="9b71b988-2d60-451f-b495-f71f8db96e41" name="web-app" url="http://192.168.0.103:8080/app">
         <fileTransfer port="0" mountedRoot="C:\Users\Administrator\Desktop" accessType="MOUNT" />
       </webServer>
     </option>

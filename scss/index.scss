@@ -26,15 +26,15 @@
           padding-top: px2rem(88);
           padding-left: px2rem(40);
           h2 {
-            @include font-size(31.33px);
+            @include fixed-size(font-size, 31.33px);
             color: #d6eeef;
           }
           h1 {
-            @include font-size(51.47px);
+            @include fixed-size(font-size, 51.47px);
             color: #fff;
           }
           h3 {
-            @include font-size(21.33px);
+            @include fixed-size(font-size, 21.33px);
             color: #e4f3f6;
           }
         }
@@ -53,7 +53,7 @@
 
     .nav-list {
       margin: 0 px2rem(29);
-      @include font-size(26.67px);
+      @include fixed-size(font-size, 26.67px);
       //color: #666;
 
       .nav-item{
@@ -195,7 +195,7 @@
       float: left;
       position: relative;
       margin-left: px2rem(114);
-      @include font-size(29.33px)
+      @include fixed-size(font-size, 29.33px)
     }
     .notice-arrow {
       float: right;
@@ -203,7 +203,7 @@
       height: 100%;
       margin-right: px2rem(18);
       vertical-align: middle;
-      @include  font-size(25.33px);
+      @include  fixed-size(font-size, 25.33px);
 
       a {
         display: block;
@@ -252,7 +252,7 @@
       float: left;
       position: relative;
       margin-right: px2rem(32);
-      @include font-size(29.33px);
+      @include fixed-size(font-size, 29.33px);
       color: #222;
 
       &:before {
@@ -270,7 +270,7 @@
 
     p {
       float: left;
-      @include font-size(17.33px);
+      @include fixed-size(font-size, 17.33px);
       color: #999;
     }
   } // end header
@@ -293,7 +293,7 @@
 
         .text {
           margin: px2rem(82) 0 0 px2rem(35);
-          @include font-size(36.37px);
+          @include fixed-size(font-size, 36.37px);
           font-weight: 700;
 
           span {
@@ -332,7 +332,7 @@
 
       .text {
         margin: px2rem(44) 0 0 px2rem(20);
-        @include font-size(25.33px);
+        @include fixed-size(font-size, 25.33px);
         color: #000;
       }
     }

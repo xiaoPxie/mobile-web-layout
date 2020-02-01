@@ -58,7 +58,7 @@ header.index-header {
   .visitors_panel {
     float: right;
     margin-right: px2rem(43);
-    @include font-size(25.33px);  //用此方式设置fonts-size
+    @include fixed-size(font-size, 25.33px);  //用此方式设置fonts-size
 
     .visitors {
       position: relative;

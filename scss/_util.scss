@@ -92,26 +92,26 @@ $max-device-width: 540px;
     }
 }
 
-/* 设置字体大小，不使用rem单位， 根据dpr值分段调整 */
-@mixin font-size($fontSize) {
-    font-size: $fontSize / $design-dpr;
+/* 固定值大小，不使用rem单位， 根据dpr值分段调整 */
+@mixin fixed-size($class-name, $size) {
+    #{$class-name}: $size / $design-dpr;
 
     [data-dpr="2"] & {
-        font-size: $fontSize / $design-dpr * 2;
+        #{$class-name}: $size / $design-dpr * 2;
     }
     // for mx3
     [data-dpr="2.5"] & {
-        font-size: $fontSize / $design-dpr * 2.5;
+        #{$class-name}: $size / $design-dpr * 2.5;
     }
     // for 小米note
     [data-dpr="2.75"] & {
-        font-size: $fontSize / $design-dpr * 2.75;
+        #{$class-name}: $size / $design-dpr * 2.75;
     }
     [data-dpr="3"] & {
-        font-size: $fontSize / $design-dpr * 3;
+        #{$class-name}: $size / $design-dpr * 3;
     }
     // for 三星note4
     [data-dpr="4"] & {
-        font-size: $fontSize / $design-dpr * 4;
+        #{$class-name}: $size / $design-dpr * 4;
     }
 }

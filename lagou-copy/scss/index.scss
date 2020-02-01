@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+@import "../../scss/util";
+@import "./flex-util";
+
+.main-content {
+  position: relative;
+  width: 100%;
+
+  .login-panel {
+    @include display-flex;
+    @include align-items_center;
+    @include justify-content_space-between;
+    @include fixed-size(height, 86px);
+    padding: 0 px2rem(30);
+    color: #555;
+    @include fixed-size(font-size, 30px);
+    border-bottom: 1px solid #e8e8e8;
+
+    &>.content-r {
+      display: block;
+      @include fixed-size(height, 60px);
+      padding-left: px2rem(40);
+      padding-right: px2rem(40);
+      @include fixed-size(line-height, 60px);
+      border-radius: 50px;
+      background-color: #f5f5f5;
+
+      &:link {
+        color: #00b38a;
+      }
+      &:hover {
+        color: #00b38a;
+      }
+    }
+  }
+
+  .content-wrap {
+    @include display-flex;
+    @include align-items_center;
+    flex-wrap: wrap;
+
+    &>.content-item {
+      @include display-flex;
+      @include align-items_center;
+      width: 100%;
+      height: auto;
+      @include fixed-size(padding, 28px);
+      border-bottom: 1px solid #e8e8e8;
+
+      &>.content-l {
+        @include fixed-size(width, 120px);
+        @include fixed-size(height, 120px);
+        @include fixed-size(margin-right, 20px);
+        font-size: 0;
+
+        img {
+          width: inherit;
+          height: auto;
+        }
+      }
+      &>.content-r {
+        @include flex(1);
+        @include fixed-size(line-height, 46px);
+
+        .detail-t {
+          @include fixed-size(font-size, 34px);
+          color: #333;
+        }
+        .detail-m {
+          @include display-flex;
+          @include justify-content_space-between;
+          @include fixed-size(font-size, 26px);
+          color: #333;
+
+          .salary-range {
+            @include fixed-size(font-size, 32px);
+            color: #00b38a;
+          }
+        }
+        .detail-b {
+          @include fixed-size(font-size, 24px);
+          color: #888;
+        }
+      }
+    }
+  }
+}
+
+
+
+

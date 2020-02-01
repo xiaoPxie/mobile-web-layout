@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+/**
+  display:flex兼容性存在多方的问题，针对该问题，编写以下的@mixin，可能不够完整
+ */
+
+//display:flex兼容性写法
+@mixin display-flex() {
+  display: -webkit-box;   /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+  display: -moz-box;      /* Firefox 17- */
+  display: -webkit-flex;  /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+  display: -moz-flex;     /* Firefox 18+ */
+  display: -ms-flexbox;   /* IE 10 */
+  display: flex;          /* Chrome 29+, Firefox 22+, IE 11+, Opera 12.1/17/18, Android 4.4+ */
+}
+
+//display:inline-flex兼容性写法
+@mixin display_inline-flex() {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+}
+
+//伸缩流方向
+@mixin flex-direction_column() {
+  -webkit-box-orient: vertical;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+//主轴对齐
+@mixin justify-content_center() {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+@mixin justify-content_flex-end() {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+@mixin justify-content_space-between() {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+//侧轴对齐
+@mixin align-items_flex-start() {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+}
+@mixin align-items_flex-end{
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+}
+@mixin align-items_center{
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+@mixin align-items_baseline{
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  -webkit-align-items: baseline;
+  align-items: baseline;
+}
+
+//伸缩性
+@mixin flex_auto{
+  -webkit-box-flex: 1;
+  -ms-flex: auto;
+  -webkit-flex: auto;
+  flex: auto;
+}
+@mixin flex($num){
+  width: 0;
+  -webkit-box-flex: $num;
+  -ms-flex: $num;
+  -webkit-flex: $num;
+  flex: $num;
+}
+
+//显示顺序
+@mixin order($num){
+  -webkit-box-ordinal-group: $num;
+  -ms-flex-order: $num;
+  -webkit-order: $num;
+  order: $num;
+}
