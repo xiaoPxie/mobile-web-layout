@@ -3,16 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="625f8b18-5dc0-4a32-9660-81d32061b7d9" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bilibili-copy/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/bilibili-copy/css/common.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bilibili-copy/css/common.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/bilibili-copy/css/common.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bilibili-copy/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/bilibili-copy/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bilibili-copy/css/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/bilibili-copy/css/index.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/common.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/common.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/common.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lagou-copy/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/lagou-copy/css/common.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lagou-copy/css/common.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/lagou-copy/css/common.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lagou-copy/scss/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/lagou-copy/scss/common.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_util.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_util.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lagou-copy/scss/index-grid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/lagou-copy/scss/index-grid.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +83,7 @@
       <workItem from="1580357149104" duration="31728000" />
       <workItem from="1580445257271" duration="6113000" />
       <workItem from="1580528004380" duration="25172000" />
-      <workItem from="1580615695327" duration="20630000" />
+      <workItem from="1580615695327" duration="20990000" />
     </task>
     <servers />
   </component>

@@ -141,24 +141,28 @@ html{
       @include complex-fix-size(height, 36px);
 
       &.icon-page {
-        background: url("../image/icon2.png") no-repeat;
-        background-position: px2rem(-65px) px2rem(-2px);
+        @include complex-fix-size(background, url("../image/icon2.png") no-repeat -64px -2.5px);
+        @include complex-fix-size(background-size, 500px 500px);
+
         &.active {
-          background-position: px2rem(-65px) px2rem(-38px);
+          @include complex-fix-size(background, url("../image/icon2.png") -64px -40px);
+          @include complex-fix-size(background-size, 500px 500px);
         }
       }
       &.icon-search {
-        background: url("../image/icon2.png") no-repeat;
-        background-position: -26px -2px;
+        @include complex-fix-size(background, url("../image/icon2.png") no-repeat -26px -2px);
+        @include complex-fix-size(background-size, 500px 500px);
         &.active {
-          background-position: -26px -38px;
+          @include complex-fix-size(background, url("../image/icon2.png") -26px -38px);
+          @include complex-fix-size(background-size, 500px 500px);
         }
       }
       &.icon-my {
-        background: url("../image/icon2.png") no-repeat;
-        background-position: -109px -5px;
+        @include complex-fix-size(background, url("../image/icon2.png") -109px -5px);
+        @include complex-fix-size(background-size, 500px 500px);
         &.active {
-          background-position: -109px -38px;
+          @include complex-fix-size(background, url("../image/icon2.png") -109px -38px);
+          @include complex-fix-size(background-size, 500px 500px);
         }
       }
     }
