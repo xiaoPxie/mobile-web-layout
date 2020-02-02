@@ -9,4 +9,5 @@ bilibili-copy文件夹为模仿bilibili移动端首页进行rem布局的练习<b
 lagou-copy文件夹为模仿拉勾移动端首页进行rem布局的练习<br>
   1、没有限定页面的最大宽度，因此会自适应各种屏幕大小，进行页面的渲染<br>
   2、拉勾移动端web的布局主要是单侧圣杯的布局，即左侧根据dpr固定宽高，右侧则是弹性的盒子<br>
-  3、主要使用了display:flex弹性盒子的布局
+  3、主要使用了display:flex弹性盒子的布局<br>
+  4、lagou-copy-grid.html使用网格布局的training page
