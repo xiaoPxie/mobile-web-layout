@@ -31,206 +31,160 @@
 html {
   background-color: #fff;
   font-family: "Microsoft YaHei", serif;
-  /* 某些机型虽然设备dpr大于1，但识别不了scale缩放，这里需要重新设置最小宽度防止出现横向滚动条 */
-}
-html body {
-  margin-right: auto;
-  margin-left: auto;
-  min-width: 320px;
-  /* 在body中添加data-content-max属性，以限定最大的宽度 ，两边留空白的布局*/
-}
-@media (-webkit-device-pixel-ratio: 2) {
+  /* 某些机型虽然设备dpr大于1，但识别不了scale缩放，这里需要重新设置最小宽度防止出现横向滚动条 */ }
   html body {
-    min-width: 640px;
-  }
-}
-@media (-webkit-device-pixel-ratio: 2.5) {
-  html body {
-    min-width: 800px;
-  }
-}
-@media (-webkit-device-pixel-ratio: 2.75) {
-  html body {
-    min-width: 880px;
-  }
-}
-@media (-webkit-device-pixel-ratio: 3) {
-  html body {
-    min-width: 960px;
-  }
-}
-@media (-webkit-device-pixel-ratio: 4) {
-  html body {
-    min-width: 1280px;
-  }
-}
-html body[data-content-max] {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 540px;
-}
-@media (-webkit-device-pixel-ratio: 2) {
-  html body[data-content-max] {
-    max-width: 1080px;
-  }
-}
-@media (-webkit-device-pixel-ratio: 2.5) {
-  html body[data-content-max] {
-    max-width: 1350px;
-  }
-}
-@media (-webkit-device-pixel-ratio: 2.75) {
-  html body[data-content-max] {
-    max-width: 1485px;
-  }
-}
-@media (-webkit-device-pixel-ratio: 3) {
-  html body[data-content-max] {
-    max-width: 1620px;
-  }
-}
-@media (-webkit-device-pixel-ratio: 4) {
-  html body[data-content-max] {
-    max-width: 2160px;
-  }
-}
-html[data-dpr="1"] body {
-  min-width: 320px;
-}
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 320px;
+    /* 在body中添加data-content-max属性，以限定最大的宽度 ，两边留空白的布局*/ }
+    @media (-webkit-device-pixel-ratio: 2) {
+      html body {
+        min-width: 640px; } }
+    @media (-webkit-device-pixel-ratio: 2.5) {
+      html body {
+        min-width: 800px; } }
+    @media (-webkit-device-pixel-ratio: 2.75) {
+      html body {
+        min-width: 880px; } }
+    @media (-webkit-device-pixel-ratio: 3) {
+      html body {
+        min-width: 960px; } }
+    @media (-webkit-device-pixel-ratio: 4) {
+      html body {
+        min-width: 1280px; } }
+    html body[data-content-max] {
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 540px; }
+      @media (-webkit-device-pixel-ratio: 2) {
+        html body[data-content-max] {
+          max-width: 1080px; } }
+      @media (-webkit-device-pixel-ratio: 2.5) {
+        html body[data-content-max] {
+          max-width: 1350px; } }
+      @media (-webkit-device-pixel-ratio: 2.75) {
+        html body[data-content-max] {
+          max-width: 1485px; } }
+      @media (-webkit-device-pixel-ratio: 3) {
+        html body[data-content-max] {
+          max-width: 1620px; } }
+      @media (-webkit-device-pixel-ratio: 4) {
+        html body[data-content-max] {
+          max-width: 2160px; } }
+  html[data-dpr="1"] body {
+    min-width: 320px; }
 
 header.index-header {
   position: relative;
   width: 100%;
   height: 1rem;
   line-height: 1rem;
-  background-color: #eee;
-}
-header.index-header .header-logo {
-  float: left;
-  position: relative;
-  width: 1.9722222222rem;
-  height: 100%;
-  margin-left: 0.4027777778rem;
-}
-header.index-header .header-logo a {
-  display: block;
-  position: absolute;
-  top: 50%;
-  width: 1.9722222222rem;
-  height: 0.5rem;
-  margin-top: -0.25rem;
-  background: url("../image/@3x/header_logo@3x.png") no-repeat;
-  background-size: contain;
-}
-header.index-header .visitors_panel {
-  float: right;
-  margin-right: 0.5972222222rem;
-  font-size: 12.665px;
-}
-[data-dpr="2"] header.index-header .visitors_panel {
-  font-size: 25.33px;
-}
-[data-dpr="2.5"] header.index-header .visitors_panel {
-  font-size: 31.6625px;
-}
-[data-dpr="2.75"] header.index-header .visitors_panel {
-  font-size: 34.82875px;
-}
-[data-dpr="3"] header.index-header .visitors_panel {
-  font-size: 37.995px;
-}
-[data-dpr="4"] header.index-header .visitors_panel {
-  font-size: 50.66px;
-}
-header.index-header .visitors_panel .visitors {
-  position: relative;
-  color: #666;
-}
-header.index-header .visitors_panel .visitors:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: -0.5138888889rem;
-  width: 0.3888888889rem;
-  height: 0.3333333333rem;
-  margin-top: -0.1666666667rem;
-  background: url("../image/@3x/header_visitors_num@3x.png") no-repeat;
-  background-size: contain;
-}
-header.index-header .visitors_panel .visitors .visitors_num {
-  color: #58afe8;
-}
+  background-color: #eee; }
+  header.index-header .header-logo {
+    float: left;
+    position: relative;
+    width: 1.9722222222rem;
+    height: 100%;
+    margin-left: 0.4027777778rem; }
+    header.index-header .header-logo a {
+      display: block;
+      position: absolute;
+      top: 50%;
+      width: 1.9722222222rem;
+      height: 0.5rem;
+      margin-top: -0.25rem;
+      background: url("../image/@3x/header_logo@3x.png") no-repeat;
+      background-size: contain; }
+  header.index-header .visitors_panel {
+    float: right;
+    margin-right: 0.5972222222rem;
+    font-size: 12.665px; }
+    [data-dpr="2"] header.index-header .visitors_panel {
+      font-size: 25.33px; }
+    [data-dpr="2.5"] header.index-header .visitors_panel {
+      font-size: 31.6625px; }
+    [data-dpr="2.75"] header.index-header .visitors_panel {
+      font-size: 34.82875px; }
+    [data-dpr="3"] header.index-header .visitors_panel {
+      font-size: 37.995px; }
+    [data-dpr="4"] header.index-header .visitors_panel {
+      font-size: 50.66px; }
+    header.index-header .visitors_panel .visitors {
+      position: relative;
+      color: #666; }
+      header.index-header .visitors_panel .visitors:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: -0.5138888889rem;
+        width: 0.3888888889rem;
+        height: 0.3333333333rem;
+        margin-top: -0.1666666667rem;
+        background: url("../image/@3x/header_visitors_num@3x.png") no-repeat;
+        background-size: contain; }
+      header.index-header .visitors_panel .visitors .visitors_num {
+        color: #58afe8; }
 
 .common-tap {
   position: fixed;
   bottom: 0;
   width: 100%;
   height: 1.3611111111rem;
-  background: #f9f9f9;
-}
-.common-tap .tap-list {
-  width: 100%;
-  height: inherit;
-}
-.common-tap .tap-list .tap-item {
-  float: left;
-  position: relative;
-  width: 33.333333%;
-  height: inherit;
-}
-.common-tap .tap-list .tap-item a {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-.common-tap .tap-list .tap-item a .tap-phone {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 0.625rem;
-  height: 0.625rem;
-  margin-left: -0.3125rem;
-  margin-top: -0.3125rem;
-  background: url("../image/@3x/tap_phone_l@3x.png") no-repeat;
-  background-size: contain;
-}
-.common-tap .tap-list .tap-item a .tap-phone.active {
-  background: url("../image/@3x/tap_phone_r@3x.png") no-repeat;
-  background-size: contain;
-}
-.common-tap .tap-list .tap-item a .tap-i {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 0.625rem;
-  height: 0.625rem;
-  margin-left: -0.3125rem;
-  margin-top: -0.3125rem;
-  background: url("../image/@3x/tap_i_l@3x.png") no-repeat;
-  background-size: contain;
-}
-.common-tap .tap-list .tap-item a .tap-i.active {
-  background: url("../image/@3x/tap_i_r@3x.png") no-repeat;
-  background-size: contain;
-}
-.common-tap .tap-list .tap-item a .tap-person {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 0.5416666667rem;
-  height: 0.625rem;
-  margin-left: -0.2708333333rem;
-  margin-top: -0.3125rem;
-  background: url("../image/@3x/tap_person_l@3x.png") no-repeat;
-  background-size: contain;
-}
-.common-tap .tap-list .tap-item a .tap-person.active {
-  background: url("../image/@3x/tap_person_r@3x.png") no-repeat;
-  background-size: contain;
-}
+  background: #f9f9f9; }
+  .common-tap .tap-list {
+    width: 100%;
+    height: inherit; }
+    .common-tap .tap-list .tap-item {
+      float: left;
+      position: relative;
+      width: 33.333333%;
+      height: inherit; }
+      .common-tap .tap-list .tap-item a {
+        display: block;
+        width: 100%;
+        height: 100%; }
+        .common-tap .tap-list .tap-item a .tap-phone {
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 0.625rem;
+          height: 0.625rem;
+          margin-left: -0.3125rem;
+          margin-top: -0.3125rem;
+          background: url("../image/@3x/tap_phone_l@3x.png") no-repeat;
+          background-size: contain; }
+          .common-tap .tap-list .tap-item a .tap-phone.active {
+            background: url("../image/@3x/tap_phone_r@3x.png") no-repeat;
+            background-size: contain; }
+        .common-tap .tap-list .tap-item a .tap-i {
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 0.625rem;
+          height: 0.625rem;
+          margin-left: -0.3125rem;
+          margin-top: -0.3125rem;
+          background: url("../image/@3x/tap_i_l@3x.png") no-repeat;
+          background-size: contain; }
+          .common-tap .tap-list .tap-item a .tap-i.active {
+            background: url("../image/@3x/tap_i_r@3x.png") no-repeat;
+            background-size: contain; }
+        .common-tap .tap-list .tap-item a .tap-person {
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 0.5416666667rem;
+          height: 0.625rem;
+          margin-left: -0.2708333333rem;
+          margin-top: -0.3125rem;
+          background: url("../image/@3x/tap_person_l@3x.png") no-repeat;
+          background-size: contain; }
+          .common-tap .tap-list .tap-item a .tap-person.active {
+            background: url("../image/@3x/tap_person_r@3x.png") no-repeat;
+            background-size: contain; }
 
 /*# sourceMappingURL=common.css.map */

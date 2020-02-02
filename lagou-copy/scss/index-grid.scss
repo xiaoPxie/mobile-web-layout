@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+@import "../../scss/util";
+@import "./flex-util";
+
+/* 字体库 */
+@font-face {
+  font-family: 'Helvetica';
+  src:url('../font/Helvetica/Helvetica.eot');
+  src: url('../font/Helvetica/Helvetica.eot?#iefix') format('embedded-opentype'),
+        url('../font/Helvetica/Helvetica.woff') format('woff'),
+        url('../font/Helvetica/Helvetica.ttf')  format('truetype'),
+        url('../font/Helvetica/Helvetica.svg#Helvetica') format('svg');
+  //font-weight: bold;
+  font-style: normal;
+}
+
+html{
+  background-color: #fff;
+  font-family: Helvetica, "Microsoft YaHei", serif;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+
+  @include root-width();
+}
+
+.common-header {
+  display: grid;
+  @include complex-fix-size(grid-template-rows, 90px);
+  justify-items: center;
+  align-items: center;
+  @include complex-fix-size(font-size, 38px);
+  color: #fff;
+  background-color: #00b38a;
+}
+
+.main-content {
+
+  .login-panel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    @include complex-fix-size(height, 86px);
+    @include complex-fix-size(padding-left, 46px);
+    @include complex-fix-size(padding-right, 46px);
+    color: #555;
+    @include complex-fix-size(font-size, 30px);
+    border-bottom: 1px solid #e8e8e8;
+
+    & > .content-r {
+      justify-self: end;
+      @include complex-fix-size(height, 60px);
+      padding: 0 px2rem(40);
+      @include complex-fix-size(line-height, 60px);
+      border-radius: px2rem(50);
+      background-color: #f5f5f5;
+
+      &:link {
+        color: #00b38a;
+      }
+      &:hover {
+        color: #00b38a;
+      }
+    }
+  } //login-panel end
+
+  .content-wrap {
+
+    & > .content-item {
+      display: grid;
+      @include complex-fix-size(grid-template-columns, 120px auto);
+      align-items: center;
+      @include complex-fix-size(padding, 28px);
+
+      & > .content-l {
+        @include complex-fix-size(width, 120px);
+        @include complex-fix-size(height, 120px);
+        font-size: 0;
+
+        img {
+          width: inherit;
+          height: auto;
+        }
+      }
+      & > .content-r {
+        @include complex-fix-size(padding-left, 20px);
+        @include complex-fix-size(line-height, 46px);
+
+        .detail-t {
+          @include complex-fix-size(font-size, 34px);
+          color: #333;
+        }
+        .detail-m {
+          display: grid;
+          @include complex-fix-size(grid-template-columns, auto auto);
+          justify-content: space-between;
+          @include complex-fix-size(font-size, 26px);
+          color: #333;
+
+          .salary-range {
+            @include complex-fix-size(font-size, 32px);
+            color: #00b38a;
+          }
+        }
+        .detail-b {
+          @include complex-fix-size(font-size, 24px);
+          color: #888;
+        }
+      }
+
+    }
+  }
+}
+
+.common-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  @include complex-fix-size(height, 92px);
+  @include complex-fix-size(line-height, 92px);
+  background-color: #f6f6f6;
+
+  .footer-item{
+    text-align: center;
+    font-size: 0;
+
+    &:link {
+      color: #c2cfcc;
+    }
+    &:hover {
+      color: #c2cfcc;
+    }
+
+    span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .icon {
+      @include complex-fix-size(width, 36px);
+      @include complex-fix-size(height, 36px);
+
+      &.icon-page {
+        background: url("../image/icon2.png") no-repeat;
+        background-position: px2rem(-65px) px2rem(-2px);
+        &.active {
+          background-position: px2rem(-65px) px2rem(-38px);
+        }
+      }
+      &.icon-search {
+        background: url("../image/icon2.png") no-repeat;
+        background-position: -26px -2px;
+        &.active {
+          background-position: -26px -38px;
+        }
+      }
+      &.icon-my {
+        background: url("../image/icon2.png") no-repeat;
+        background-position: -109px -5px;
+        &.active {
+          background-position: -109px -38px;
+        }
+      }
+    }
+    .text {
+      @include complex-fix-size(font-size, 34px);
+    }
+
+    &.active {
+      color: #00b38a;
+      background-color: #e7f3f0;
+    }
+  }
+}
+
+
+
+
+
