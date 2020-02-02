@@ -74,12 +74,11 @@ html {
     min-width: 320px; }
 
 .common-header {
-  height: 45px;
-  font-size: 19px;
   text-align: center;
-  line-height: 45px;
   color: #fff;
   background-color: #00b38a; }
+  [data-dpr="1"] .common-header {
+    height: 45px; }
   [data-dpr="2"] .common-header {
     height: 90px; }
   [data-dpr="2.5"] .common-header {
@@ -90,6 +89,8 @@ html {
     height: 135px; }
   [data-dpr="4"] .common-header {
     height: 180px; }
+  [data-dpr="1"] .common-header {
+    font-size: 19px; }
   [data-dpr="2"] .common-header {
     font-size: 38px; }
   [data-dpr="2.5"] .common-header {
@@ -100,6 +101,8 @@ html {
     font-size: 57px; }
   [data-dpr="4"] .common-header {
     font-size: 76px; }
+  [data-dpr="1"] .common-header {
+    line-height: 45px; }
   [data-dpr="2"] .common-header {
     line-height: 90px; }
   [data-dpr="2.5"] .common-header {
@@ -131,11 +134,12 @@ html {
   position: fixed;
   width: 100%;
   padding: 0.3194444444rem 0;
-  bottom: 46px;
   text-align: center;
   font-size: 0;
   border: none;
   background-color: rgba(14, 14, 14, 0.9); }
+  [data-dpr="1"] .app-download-wrap {
+    bottom: 46px; }
   [data-dpr="2"] .app-download-wrap {
     bottom: 92px; }
   [data-dpr="2.5"] .app-download-wrap {
@@ -206,9 +210,9 @@ html {
   position: fixed;
   width: 100%;
   bottom: 0;
-  height: 46px;
-  line-height: 46px;
   background-color: #f6f6f6; }
+  [data-dpr="1"] .common-footer {
+    height: 46px; }
   [data-dpr="2"] .common-footer {
     height: 92px; }
   [data-dpr="2.5"] .common-footer {
@@ -219,6 +223,8 @@ html {
     height: 138px; }
   [data-dpr="4"] .common-footer {
     height: 184px; }
+  [data-dpr="1"] .common-footer {
+    line-height: 46px; }
   [data-dpr="2"] .common-footer {
     line-height: 92px; }
   [data-dpr="2.5"] .common-footer {
@@ -244,56 +250,186 @@ html {
     .common-footer .footer-item span {
       display: inline-block;
       vertical-align: middle; }
-    .common-footer .footer-item .icon {
-      width: 18px;
+    [data-dpr="1"] .common-footer .footer-item .icon {
+      width: 18px; }
+    [data-dpr="2"] .common-footer .footer-item .icon {
+      width: 36px; }
+    [data-dpr="2.5"] .common-footer .footer-item .icon {
+      width: 45px; }
+    [data-dpr="2.75"] .common-footer .footer-item .icon {
+      width: 49.5px; }
+    [data-dpr="3"] .common-footer .footer-item .icon {
+      width: 54px; }
+    [data-dpr="4"] .common-footer .footer-item .icon {
+      width: 72px; }
+    [data-dpr="1"] .common-footer .footer-item .icon {
       height: 18px; }
-      [data-dpr="2"] .common-footer .footer-item .icon {
-        width: 36px; }
-      [data-dpr="2.5"] .common-footer .footer-item .icon {
-        width: 45px; }
-      [data-dpr="2.75"] .common-footer .footer-item .icon {
-        width: 49.5px; }
-      [data-dpr="3"] .common-footer .footer-item .icon {
-        width: 54px; }
-      [data-dpr="4"] .common-footer .footer-item .icon {
-        width: 72px; }
-      [data-dpr="2"] .common-footer .footer-item .icon {
-        height: 36px; }
-      [data-dpr="2.5"] .common-footer .footer-item .icon {
-        height: 45px; }
-      [data-dpr="2.75"] .common-footer .footer-item .icon {
-        height: 49.5px; }
-      [data-dpr="3"] .common-footer .footer-item .icon {
-        height: 54px; }
-      [data-dpr="4"] .common-footer .footer-item .icon {
-        height: 72px; }
-      .common-footer .footer-item .icon.icon-page {
-        background: url("../image/icon2.png") no-repeat;
-        background-position: -65px -2px; }
-        .common-footer .footer-item .icon.icon-page.active {
-          background-position: -65px -38px; }
-      .common-footer .footer-item .icon.icon-search {
-        background: url("../image/icon2.png") no-repeat;
-        background-position: -26px -2px; }
-        .common-footer .footer-item .icon.icon-search.active {
-          background-position: -26px -38px; }
-      .common-footer .footer-item .icon.icon-my {
-        background: url("../image/icon2.png") no-repeat;
-        background-position: -109px -5px; }
-        .common-footer .footer-item .icon.icon-my.active {
-          background-position: -109px -38px; }
-    .common-footer .footer-item .text {
+    [data-dpr="2"] .common-footer .footer-item .icon {
+      height: 36px; }
+    [data-dpr="2.5"] .common-footer .footer-item .icon {
+      height: 45px; }
+    [data-dpr="2.75"] .common-footer .footer-item .icon {
+      height: 49.5px; }
+    [data-dpr="3"] .common-footer .footer-item .icon {
+      height: 54px; }
+    [data-dpr="4"] .common-footer .footer-item .icon {
+      height: 72px; }
+    [data-dpr="1"] .common-footer .footer-item .icon.icon-page {
+      background: url("../image/icon2.png") no-repeat -32px -1.25px; }
+    [data-dpr="2"] .common-footer .footer-item .icon.icon-page {
+      background: url("../image/icon2.png") no-repeat -64px -2.5px; }
+    [data-dpr="2.5"] .common-footer .footer-item .icon.icon-page {
+      background: url("../image/icon2.png") no-repeat -80px -3.125px; }
+    [data-dpr="2.75"] .common-footer .footer-item .icon.icon-page {
+      background: url("../image/icon2.png") no-repeat -88px -3.4375px; }
+    [data-dpr="3"] .common-footer .footer-item .icon.icon-page {
+      background: url("../image/icon2.png") no-repeat -96px -3.75px; }
+    [data-dpr="4"] .common-footer .footer-item .icon.icon-page {
+      background: url("../image/icon2.png") no-repeat -128px -5px; }
+    [data-dpr="1"] .common-footer .footer-item .icon.icon-page {
+      background-size: 250px 250px; }
+    [data-dpr="2"] .common-footer .footer-item .icon.icon-page {
+      background-size: 500px 500px; }
+    [data-dpr="2.5"] .common-footer .footer-item .icon.icon-page {
+      background-size: 625px 625px; }
+    [data-dpr="2.75"] .common-footer .footer-item .icon.icon-page {
+      background-size: 687.5px 687.5px; }
+    [data-dpr="3"] .common-footer .footer-item .icon.icon-page {
+      background-size: 750px 750px; }
+    [data-dpr="4"] .common-footer .footer-item .icon.icon-page {
+      background-size: 1000px 1000px; }
+    [data-dpr="1"] .common-footer .footer-item .icon.icon-page.active {
+      background: url("../image/icon2.png") -32px -20px; }
+    [data-dpr="2"] .common-footer .footer-item .icon.icon-page.active {
+      background: url("../image/icon2.png") -64px -40px; }
+    [data-dpr="2.5"] .common-footer .footer-item .icon.icon-page.active {
+      background: url("../image/icon2.png") -80px -50px; }
+    [data-dpr="2.75"] .common-footer .footer-item .icon.icon-page.active {
+      background: url("../image/icon2.png") -88px -55px; }
+    [data-dpr="3"] .common-footer .footer-item .icon.icon-page.active {
+      background: url("../image/icon2.png") -96px -60px; }
+    [data-dpr="4"] .common-footer .footer-item .icon.icon-page.active {
+      background: url("../image/icon2.png") -128px -80px; }
+    [data-dpr="1"] .common-footer .footer-item .icon.icon-page.active {
+      background-size: 250px 250px; }
+    [data-dpr="2"] .common-footer .footer-item .icon.icon-page.active {
+      background-size: 500px 500px; }
+    [data-dpr="2.5"] .common-footer .footer-item .icon.icon-page.active {
+      background-size: 625px 625px; }
+    [data-dpr="2.75"] .common-footer .footer-item .icon.icon-page.active {
+      background-size: 687.5px 687.5px; }
+    [data-dpr="3"] .common-footer .footer-item .icon.icon-page.active {
+      background-size: 750px 750px; }
+    [data-dpr="4"] .common-footer .footer-item .icon.icon-page.active {
+      background-size: 1000px 1000px; }
+    [data-dpr="1"] .common-footer .footer-item .icon.icon-search {
+      background: url("../image/icon2.png") no-repeat -13px -1px; }
+    [data-dpr="2"] .common-footer .footer-item .icon.icon-search {
+      background: url("../image/icon2.png") no-repeat -26px -2px; }
+    [data-dpr="2.5"] .common-footer .footer-item .icon.icon-search {
+      background: url("../image/icon2.png") no-repeat -32.5px -2.5px; }
+    [data-dpr="2.75"] .common-footer .footer-item .icon.icon-search {
+      background: url("../image/icon2.png") no-repeat -35.75px -2.75px; }
+    [data-dpr="3"] .common-footer .footer-item .icon.icon-search {
+      background: url("../image/icon2.png") no-repeat -39px -3px; }
+    [data-dpr="4"] .common-footer .footer-item .icon.icon-search {
+      background: url("../image/icon2.png") no-repeat -52px -4px; }
+    [data-dpr="1"] .common-footer .footer-item .icon.icon-search {
+      background-size: 250px 250px; }
+    [data-dpr="2"] .common-footer .footer-item .icon.icon-search {
+      background-size: 500px 500px; }
+    [data-dpr="2.5"] .common-footer .footer-item .icon.icon-search {
+      background-size: 625px 625px; }
+    [data-dpr="2.75"] .common-footer .footer-item .icon.icon-search {
+      background-size: 687.5px 687.5px; }
+    [data-dpr="3"] .common-footer .footer-item .icon.icon-search {
+      background-size: 750px 750px; }
+    [data-dpr="4"] .common-footer .footer-item .icon.icon-search {
+      background-size: 1000px 1000px; }
+    [data-dpr="1"] .common-footer .footer-item .icon.icon-search.active {
+      background: url("../image/icon2.png") -13px -19px; }
+    [data-dpr="2"] .common-footer .footer-item .icon.icon-search.active {
+      background: url("../image/icon2.png") -26px -38px; }
+    [data-dpr="2.5"] .common-footer .footer-item .icon.icon-search.active {
+      background: url("../image/icon2.png") -32.5px -47.5px; }
+    [data-dpr="2.75"] .common-footer .footer-item .icon.icon-search.active {
+      background: url("../image/icon2.png") -35.75px -52.25px; }
+    [data-dpr="3"] .common-footer .footer-item .icon.icon-search.active {
+      background: url("../image/icon2.png") -39px -57px; }
+    [data-dpr="4"] .common-footer .footer-item .icon.icon-search.active {
+      background: url("../image/icon2.png") -52px -76px; }
+    [data-dpr="1"] .common-footer .footer-item .icon.icon-search.active {
+      background-size: 250px 250px; }
+    [data-dpr="2"] .common-footer .footer-item .icon.icon-search.active {
+      background-size: 500px 500px; }
+    [data-dpr="2.5"] .common-footer .footer-item .icon.icon-search.active {
+      background-size: 625px 625px; }
+    [data-dpr="2.75"] .common-footer .footer-item .icon.icon-search.active {
+      background-size: 687.5px 687.5px; }
+    [data-dpr="3"] .common-footer .footer-item .icon.icon-search.active {
+      background-size: 750px 750px; }
+    [data-dpr="4"] .common-footer .footer-item .icon.icon-search.active {
+      background-size: 1000px 1000px; }
+    [data-dpr="1"] .common-footer .footer-item .icon.icon-my {
+      background: url("../image/icon2.png") -54.5px -2.5px; }
+    [data-dpr="2"] .common-footer .footer-item .icon.icon-my {
+      background: url("../image/icon2.png") -109px -5px; }
+    [data-dpr="2.5"] .common-footer .footer-item .icon.icon-my {
+      background: url("../image/icon2.png") -136.25px -6.25px; }
+    [data-dpr="2.75"] .common-footer .footer-item .icon.icon-my {
+      background: url("../image/icon2.png") -149.875px -6.875px; }
+    [data-dpr="3"] .common-footer .footer-item .icon.icon-my {
+      background: url("../image/icon2.png") -163.5px -7.5px; }
+    [data-dpr="4"] .common-footer .footer-item .icon.icon-my {
+      background: url("../image/icon2.png") -218px -10px; }
+    [data-dpr="1"] .common-footer .footer-item .icon.icon-my {
+      background-size: 250px 250px; }
+    [data-dpr="2"] .common-footer .footer-item .icon.icon-my {
+      background-size: 500px 500px; }
+    [data-dpr="2.5"] .common-footer .footer-item .icon.icon-my {
+      background-size: 625px 625px; }
+    [data-dpr="2.75"] .common-footer .footer-item .icon.icon-my {
+      background-size: 687.5px 687.5px; }
+    [data-dpr="3"] .common-footer .footer-item .icon.icon-my {
+      background-size: 750px 750px; }
+    [data-dpr="4"] .common-footer .footer-item .icon.icon-my {
+      background-size: 1000px 1000px; }
+    [data-dpr="1"] .common-footer .footer-item .icon.icon-my.active {
+      background: url("../image/icon2.png") -54.5px -19px; }
+    [data-dpr="2"] .common-footer .footer-item .icon.icon-my.active {
+      background: url("../image/icon2.png") -109px -38px; }
+    [data-dpr="2.5"] .common-footer .footer-item .icon.icon-my.active {
+      background: url("../image/icon2.png") -136.25px -47.5px; }
+    [data-dpr="2.75"] .common-footer .footer-item .icon.icon-my.active {
+      background: url("../image/icon2.png") -149.875px -52.25px; }
+    [data-dpr="3"] .common-footer .footer-item .icon.icon-my.active {
+      background: url("../image/icon2.png") -163.5px -57px; }
+    [data-dpr="4"] .common-footer .footer-item .icon.icon-my.active {
+      background: url("../image/icon2.png") -218px -76px; }
+    [data-dpr="1"] .common-footer .footer-item .icon.icon-my.active {
+      background-size: 250px 250px; }
+    [data-dpr="2"] .common-footer .footer-item .icon.icon-my.active {
+      background-size: 500px 500px; }
+    [data-dpr="2.5"] .common-footer .footer-item .icon.icon-my.active {
+      background-size: 625px 625px; }
+    [data-dpr="2.75"] .common-footer .footer-item .icon.icon-my.active {
+      background-size: 687.5px 687.5px; }
+    [data-dpr="3"] .common-footer .footer-item .icon.icon-my.active {
+      background-size: 750px 750px; }
+    [data-dpr="4"] .common-footer .footer-item .icon.icon-my.active {
+      background-size: 1000px 1000px; }
+    [data-dpr="1"] .common-footer .footer-item .text {
       font-size: 17px; }
-      [data-dpr="2"] .common-footer .footer-item .text {
-        font-size: 34px; }
-      [data-dpr="2.5"] .common-footer .footer-item .text {
-        font-size: 42.5px; }
-      [data-dpr="2.75"] .common-footer .footer-item .text {
-        font-size: 46.75px; }
-      [data-dpr="3"] .common-footer .footer-item .text {
-        font-size: 51px; }
-      [data-dpr="4"] .common-footer .footer-item .text {
-        font-size: 68px; }
+    [data-dpr="2"] .common-footer .footer-item .text {
+      font-size: 34px; }
+    [data-dpr="2.5"] .common-footer .footer-item .text {
+      font-size: 42.5px; }
+    [data-dpr="2.75"] .common-footer .footer-item .text {
+      font-size: 46.75px; }
+    [data-dpr="3"] .common-footer .footer-item .text {
+      font-size: 51px; }
+    [data-dpr="4"] .common-footer .footer-item .text {
+      font-size: 68px; }
     .common-footer .footer-item.active {
       color: #00b38a;
       background-color: #e7f3f0; }

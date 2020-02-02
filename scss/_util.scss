@@ -115,3 +115,26 @@ $max-device-width: 540px;
         #{$class-name}: $size / $design-dpr * 4;
     }
 }
+
+// 简写class-name，根据设定的dpr取固定px值
+$dpr-list: (1 2 2.5 2.75 3 4);
+@mixin complex-fix-size($class-name, $value-list) {
+    @for $i from 1 through length($dpr-list) {
+        $list: ();
+        $dpr-item: nth($dpr-list, $i);
+        @for $j from 1 through length($value-list) {
+            $value-item: nth($value-list, $j);
+            //是数值则根据dpr计算出px值
+            @if type_of($value-item) == number {
+                $list: append($list, $value-item / $design-dpr * $dpr-item);
+            }
+            @else {
+                $list: append($list, $value-item);
+            }
+        }
+        //
+        [data-dpr="#{$dpr-item}"] & {
+            #{$class-name}: $list;
+        }
+    }
+}

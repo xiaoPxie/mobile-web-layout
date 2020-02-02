@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/* 添加动画前缀 */
+@mixin prefix-keyframes($name, $options: [webkit moz o ms]) {
+  @keyframes #{$name} {
+    @content;
+  }
+  @each $option in $options {
+    @if $option == webkit {
+      @-webkit-keyframes #{$name} {
+        @content;
+      }
+    }
+    @else if $option == moz {
+      @-moz-keyframes #{$name} {
+        @content;
+      }
+    }
+    @else if $option == o {
+      @-o-keyframes #{$name} {
+        @content;
+      }
+    }
+    @else if $option == ms {
+      @-ms-keyframes #{$name} {
+        @content;
+      }
+    }
+  }
+}
+

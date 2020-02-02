@@ -25,10 +25,10 @@ html{
 
 
 .common-header {
-  @include fixed-size(height, 90px);
-  @include fixed-size(font-size, 38px);
+  @include complex-fix-size(height, 90px);
+  @include complex-fix-size(font-size, 38px);
   text-align: center;
-  @include fixed-size(line-height, 90px);
+  @include complex-fix-size(line-height, 90px);
   color: #fff;
   background-color: #00b38a;
 }
@@ -39,7 +39,7 @@ html{
   position: fixed;
   width: 100%;
   padding: px2rem(23) 0;
-  @include fixed-size(bottom, 92px);
+  @include complex-fix-size(bottom, 92px);
   text-align: center;
   font-size: 0;
   border: none;
@@ -107,8 +107,8 @@ html{
   position: fixed;
   width: 100%;
   bottom: 0;
-  @include fixed-size(height, 92px);
-  @include fixed-size(line-height, 92px);
+  @include complex-fix-size(height, 92px);
+  @include complex-fix-size(line-height, 92px);
   background-color: #f6f6f6;
 
   .footer-item{
@@ -116,7 +116,7 @@ html{
     height: 100%;
     text-align: center;
     font-size: 0;
-    //@include fixed-size(font-size, 34px);
+    //@include complex-fix-size(font-size, 34px);
     &:link {
       color: #c2cfcc;
     }
@@ -129,33 +129,37 @@ html{
       vertical-align: middle;
     }
     .icon {
-      @include fixed-size(width, 36px);
-      @include fixed-size(height, 36px);
+      @include complex-fix-size(width, 36px);
+      @include complex-fix-size(height, 36px);
 
       &.icon-page {
-        background: url("../image/icon2.png") no-repeat;
-        background-position: -65px -2px;
+        @include complex-fix-size(background, url("../image/icon2.png") no-repeat -64px -2.5px);
+        @include complex-fix-size(background-size, 500px 500px);
+
         &.active {
-          background-position: -65px -38px;
+          @include complex-fix-size(background, url("../image/icon2.png") -64px -40px);
+          @include complex-fix-size(background-size, 500px 500px);
         }
       }
       &.icon-search {
-        background: url("../image/icon2.png") no-repeat;
-        background-position: -26px -2px;
+        @include complex-fix-size(background, url("../image/icon2.png") no-repeat -26px -2px);
+        @include complex-fix-size(background-size, 500px 500px);
         &.active {
-          background-position: -26px -38px;
+          @include complex-fix-size(background, url("../image/icon2.png") -26px -38px);
+          @include complex-fix-size(background-size, 500px 500px);
         }
       }
       &.icon-my {
-        background: url("../image/icon2.png") no-repeat;
-        background-position: -109px -5px;
+        @include complex-fix-size(background, url("../image/icon2.png") -109px -5px);
+        @include complex-fix-size(background-size, 500px 500px);
         &.active {
-          background-position: -109px -38px;
+          @include complex-fix-size(background, url("../image/icon2.png") -109px -38px);
+          @include complex-fix-size(background-size, 500px 500px);
         }
       }
     }
     .text {
-      @include fixed-size(font-size, 34px);
+      @include complex-fix-size(font-size, 34px);
     }
 
     &.active {
